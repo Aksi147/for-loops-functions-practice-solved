@@ -2,8 +2,6 @@
 // Return an array of numbers in 1..10
 // getFirstTenNumbers() => [1, 2, 3, ... , 10]
 
-let array = [];
-
 export function getFirstTenNumbers() {
   // your code goes here
   let result = [];
