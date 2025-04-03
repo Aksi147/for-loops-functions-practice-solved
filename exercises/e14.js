@@ -8,7 +8,7 @@ export function getClientsWithWrongBalance(array) {
   // Your code goes here...
   let result = [];
   for (let obj of array) {
-    if (Array.isArray(obj.deposits) && Array.isArray(obj.withdrawals)) {
+    if (obj.deposits && obj.withdrawals) {
       let depositSum = 0;
       for (let deposit of obj.deposits) {
         depositSum += deposit;

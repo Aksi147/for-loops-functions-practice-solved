@@ -10,13 +10,12 @@ export function getAllWithdrawals(array) {
 
   for (let obj of array) {
     let sum = 0;
-    if (Array.isArray(obj.withdrawals)) {
+    if (obj.withdrawals) {
       for (let amount of obj.withdrawals) {
         sum += amount;
       }
     }
     totalAmount.push(sum);
-    console.log(sum);
   }
   return totalAmount;
 }

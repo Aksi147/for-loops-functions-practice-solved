@@ -7,9 +7,9 @@
 export function joinToString(array, separator) {
   let string = "";
   for (let i = 0; i < array.length; i++) {
-    string = string.concat(`${array[i]}`);
+    string = string + `${array[i]}`;
     if (i < array.length - 1) {
-      string = string.concat(`${separator}`);
+      string = string + `${separator}`;
     }
   }
   return string;

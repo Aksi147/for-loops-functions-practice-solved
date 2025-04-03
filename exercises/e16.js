@@ -8,7 +8,7 @@ export function flatArrays(array) {
   // Your code goes here...
   let result = [];
   for (let item of array) {
-    if (Array.isArray(item)) {
+    if (item) {
       for (let i of item) {
         result.push(i);
       }
