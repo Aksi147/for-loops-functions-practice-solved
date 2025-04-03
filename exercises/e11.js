@@ -6,7 +6,19 @@
 
 export function getAllWithdrawals(array) {
   // Your code goes here...
+  let totalAmount = [];
 
+  for (let obj of array) {
+    let sum = 0;
+    if (Array.isArray(obj.withdrawals)) {
+      for (let amount of obj.withdrawals) {
+        sum += amount;
+      }
+    }
+    totalAmount.push(sum);
+    console.log(sum);
+  }
+  return totalAmount;
 }
 
 // === TEST YOURSELF ===
